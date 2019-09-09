@@ -2,6 +2,8 @@
 
 open System
 
+let someFn x = x - 1
+
 [<EntryPoint>]
 let main argv =
     printfn "Hello World from F#!"

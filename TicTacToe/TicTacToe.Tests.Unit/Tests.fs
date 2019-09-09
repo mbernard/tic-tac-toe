@@ -1,11 +1,12 @@
-namespace TicTacToe.Tests.Unit
+module test
 
-open System
-open Microsoft.VisualStudio.TestTools.UnitTesting
+open Swensen.Unquote
+open Expecto
 
-[<TestClass>]
-type TestClass () =
-
-    [<TestMethod>]
-    member this.TestMethodPassing () =
-        Assert.IsTrue(true);
+[<Tests>]
+let tests = 
+    test "A simple test" {
+        let res = Program.someFn 1
+        //Expect.equal res 1 "omg"
+        res =! 0
+    }
