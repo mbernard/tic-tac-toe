@@ -11,4 +11,9 @@
     <Compile Include="Program.fs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="dotnet-fantomas" Version="2.9.2" />
+    <PackageReference Include="Fantomas" Version="2.9.2" />
+  </ItemGroup>
+
 </Project>
