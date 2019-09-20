@@ -1,4 +1,4 @@
-﻿namespace Tests
+namespace Tests
 
 module Domain =
     open Swensen.Unquote
@@ -10,8 +10,4 @@ module Domain =
     let Then expectedEvents events = events =! expectedEvents
 
     [<Tests>]
-    let tests = 
-        test "Given " {
-            Given []
-        }
-
+    let tests = test "Given " { Given [] }
