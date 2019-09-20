@@ -55,3 +55,4 @@ type CommandHandler<'Command> =
       OnError : IEvent<exn> }
 
 type Behaviour<'Command, 'Event> = 'Command -> EventProducer<'Event>
+
